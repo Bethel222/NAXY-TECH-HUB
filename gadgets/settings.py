@@ -26,11 +26,8 @@ SECRET_KEY = 'django-insecure-=q+z4d=%rb_#jb^r=#k0rihug23i^e7w#qsf28di618ro2tk9f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'naxy-tech-hub-4.onrender.com',
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['naxy-tech-hub-4.onrender.com']
+
 
 
 # Application definition
