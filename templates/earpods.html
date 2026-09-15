@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earpods | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Oraimo audio</p>
+    <h1>Earpods &amp; Audio Products</h1>
+    <p class="page-header__text">Browse the Oraimo audio collection in one place, including earbuds, open-ear audio, headphones, neckbands, speakers, and wired earphones.</p>
+  </header>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="earpods-search">Search audio products</label>
+    <input id="earpods-search" class="search-panel__input" type="search" placeholder="Search by earbud, headphone, speaker, or feature" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching audio products found. Try another model name or keyword.</p>
+  </section>
+
+  <main class="product-section">
+    <article class="product-card">
+      <img src="https://cdn-img.oraimo.com/fit-in/600x600/GH/product/2025/01/09/spacebuds-neo-otw-323.png" alt="oraimo SpaceBuds Neo True Wireless Spatial Earbuds">
+      <h3>oraimo SpaceBuds Neo True Wireless Spatial Earbuds</h3>
+      <p class="price">N18,800</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Noise reduction in calls</li>
+          <li>Sound360 spatial audio</li>
+          <li>30-hour long playtime</li>
+          <li>Bluetooth 5.4 simultaneous connection</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Neo%20True%20Wireless%20Spatial%20Earbuds">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="https://cdn-img.oraimo.com/fit-in/600x600/KE/product/2025/05/26/oraimo-OpenSnap-N-OPN-372N-3.png" alt="oraimo OpenSnap N Clip-On Open-Ear True Wireless Earbuds">
+      <h3>oraimo OpenSnap N Clip-On Open-Ear True Wireless Earbuds</h3>
+      <p class="price">N30,900</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Comfortable and secure fit</li>
+          <li>Clear voice in calls</li>
+          <li>16-hour long battery life</li>
+          <li>Customize your listening</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20OpenSnap%20N%20Clip-On%20Open-Ear%20True%20Wireless%20Earbuds">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Earbuds/SPACE BUDS NEO+ ANC.webp' %}" alt="oraimo SpaceBuds Neo Plus">
+      <h3>oraimo SpaceBuds Neo+</h3>
+      <p class="price">N22,700</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Advanced active noise cancellation</li>
+          <li>Wind noise reduction in calls</li>
+          <li>30-hour playtime</li>
+          <li>IPX4 water resistance</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Neo%20Plus">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Earbuds/oraimo SpaceBuds Lite Sound360 Anti-Lost True Wireless Earbuds.webp' %}" alt="oraimo SpaceBuds Lite">
+      <h3>oraimo SpaceBuds Lite</h3>
+      <p class="price">N15,400</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>HavyBass dual-device connection</li>
+          <li>40-hour long playtime</li>
+          <li>Noise reduction in calls</li>
+          <li>IPX5 water resistance</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Lite">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Earbuds/oraimo SpaceBuds Air 38 Hours Smart Finder True Wireless Earbuds.webp' %}" alt="oraimo SpaceBuds Air">
+      <h3>oraimo SpaceBuds Air</h3>
+      <p class="price">N15,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Open-fit comfort</li>
+          <li>50-hour playtime</li>
+          <li>4-mic noise reduction in calls</li>
+          <li>Dual device connection</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Air">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Earbuds/oraimo BoomPop Pro ANC Over-Ear Headphones.webp' %}" alt="oraimo SpaceBuds Pro">
+      <h3>oraimo SpaceBuds Pro</h3>
+      <p class="price">N52,600</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>50dB ANC with spatial audio</li>
+          <li>6-mic AI deep noise cancellation</li>
+          <li>Smart chat mode</li>
+          <li>Dual device connection</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Pro">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Earbuds/BOOMBEST LN-5216BT.jpeg' %}" alt="oraimo SpaceBuds Pro">
+      <h3>BOOMBEST LN-5216BTo</h3>
+      <p class="price">N45,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Massive 10,800mAh battery</li>
+          <li>30W triple speakers with equalizer</li>
+          <li>Digital display screen</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20oraimo%20SpaceBuds%20Pro">Order on WhatsApp</a>
+    </article>
+
+    
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20audio%20product%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the audio product I am looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20audio%20product%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the audio product I am looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+

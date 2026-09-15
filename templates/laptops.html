@@ -1,0 +1,471 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Portable systems</p>
+    <h1>Laptops</h1>
+    <p class="page-header__text">Browse available laptop options and message Naxy Tech Gadgets for the latest price and stock updates.</p>
+  </header>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="laptop-search">Search laptops</label>
+    <input id="laptop-search" class="search-panel__input" type="search" placeholder="Search by laptop name or spec" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching laptops found. Try another model name, keyword, or budget.</p>
+  </section>
+
+  <main class="product-section">
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/HP Elitebook 840 G5.jfif' %}" alt="HP EliteBook 840 G5 laptop">
+      <h3>HP EliteBook 840 G5</h3>
+      <p class="price">N400,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>14-inch Full HD display</li>
+          <li>Intel Core i5 / i7 options</li>
+          <li>Fast SSD storage</li>
+          <li>8GB RAM and up</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20EliteBook%20840%20G5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Used HP Elitebook x360 1040 G7.jfif' %}" alt="HP EliteBook x360 1040 G7 laptop">
+      <h3>HP EliteBook x360 1040 G7</h3>
+      <p class="price">N850,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>14-inch Full HD touchscreen</li>
+          <li>360-degree convertible design</li>
+          <li>Intel Core i5 / i7 10th Gen</li>
+          <li>SSD storage with premium build</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20EliteBook%20x360%201040%20G7">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-elite-x2-tablet.jfif' %}" alt="HP x2 2-in-1 laptop">
+      <h3>HP x2 2-in-1</h3>
+      <p class="price">N400,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>12 to 13-inch Full HD touchscreen</li>
+          <li>Detachable keyboard design</li>
+          <li>Intel Core m3 / i3 / i5 options</li>
+          <li>Flexible tablet and laptop use</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20x2%202-in-1">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-1030g3-x360' %}" alt="HP 1030G3 laptop">
+      <h3>HP 1030G3</h3>
+      <p class="price">N430,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>512GB SSD storage</li>
+          <li>Slim and portable build</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201030G3%208GB%20512SSD%20i5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-1030g4-touch' %}" alt="HP 1030G4 non-touch laptop">
+      <h3>HP 1030G4</h3>
+      <p class="price">N450,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>16GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Non-touch display</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201030G4%2016GB%20256SSD%20i5%20Nontouch">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-spectre-x360.jfif' %}" alt="HP Spectre G2 laptop">
+      <h3>HP Spectre G2</h3>
+      <p class="price">N365,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Premium Spectre series design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20Spectre%20G2">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Exploring the HP Victus Laptop_ Your Next Gaming Ally.jfif' %}" alt="HP Victus gaming laptop">
+      <h3>HP Victus</h3>
+      <p class="price">N2,100,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>16GB RAM</li>
+          <li>1TB SSD storage</li>
+          <li>6GB dedicated graphics</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20Victus%2016GB%201TBSSD%20i7%206GB%20dedicated">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-probook-x360-g1' %}" alt="HP ProBook x360 G1 laptop">
+      <h3>HP ProBook x360 G1</h3>
+      <p class="price">N150,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Convertible x360 design</li>
+          <li>4GB RAM</li>
+          <li>128GB SSD storage</li>
+          <li>Compact everyday laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20ProBook%20x360%20G1">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Hp stream.jfif' %}" alt="HP Stream G4 laptop">
+      <h3>HP Stream G4</h3>
+      <p class="price">N100,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>4GB RAM</li>
+          <li>64GB SSD storage</li>
+          <li>Lightweight design</li>
+          <li>Good for basic tasks</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20Stream%20G4">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-stream-g5.jfif' %}" alt="HP Stream G5 laptop">
+      <h3>HP Stream G5</h3>
+      <p class="price">N110,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>4GB RAM</li>
+          <li>64GB SSD storage</li>
+          <li>Portable design</li>
+          <li>Built for everyday essentials</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20Stream%20G5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-1030g2.jfif' %}" alt="HP 1030G2 laptop">
+      <h3>HP 1030G2</h3>
+      <p class="price">N385,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Portable productivity laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201030G2">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Pardon Our Interruption___.jfif' %}" alt="HP 9480m laptop">
+      <h3>HP 9480m</h3>
+      <p class="price">N195,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>8GB RAM</li>
+          <li>500GB hard drive</li>
+          <li>Classic business laptop build</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%209480m">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Used HP 430G5 Laptop Core I5 8th.jfif' %}" alt="HP 430G5 laptop with 256GB SSD">
+      <h3>HP 430G5</h3>
+      <p class="price">N255,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Reliable everyday laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20430G5%208GB%20256SSD%20i5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-840g2.jfif' %}" alt="HP 840G2 laptop">
+      <h3>HP 840G2</h3>
+      <p class="price">N200,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>500GB hard drive</li>
+          <li>Solid business laptop option</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20840G2">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-probook-x360-g3' %}" alt="HP ProBook x360 G3 laptop">
+      <h3>HP ProBook x360 G3</h3>
+      <p class="price">N180,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>5th generation platform</li>
+          <li>8GB RAM</li>
+          <li>128GB SSD storage</li>
+          <li>Convertible x360 design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20ProBook%20x360%20G3">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Laptop Bekas Hp EliteBook Folio 1040 G3 Core I7 Gen 6 _.jfif' %}" alt="HP 1040G3 laptop with 16GB RAM">
+      <h3>HP 1040G3</h3>
+      <p class="price">N300,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>16GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Premium EliteBook style</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201040G3%2016GB%20256SSD%20i5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/820 G4.jfif' %}" alt="HP 820G4 laptop with 8GB RAM">
+      <h3>HP 820G4</h3>
+      <p class="price">N240,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Compact business laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20820G4%208GB%20256SSD%20i7">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/820 G4.jfif' %}" alt="HP 820G4 laptop with 16GB RAM">
+      <h3>HP 820G4</h3>
+      <p class="price">N285,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>16GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Compact high-performance laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20820G4%2016GB%20256SSD%20i7">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-830g6' %}" alt="HP 830G6 laptop">
+      <h3>HP 830G6</h3>
+      <p class="price">N300,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Portable work-ready design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20830G6">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/840 G3.jfif' %}" alt="HP 820G3 laptop with i5">
+      <h3>HP 820G3</h3>
+      <p class="price">N230,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Compact productivity laptop</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20820G3%208GB%20256SSD%20i5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/840 G3.jfif' %}" alt="HP 820G3 laptop with i7">
+      <h3>HP 820G3</h3>
+      <p class="price">N250,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>Compact business-class design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20820G3%208GB%20256SSD%20i7">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-probook-x360-g9.jfif' %}" alt="HP ProBook x360 G9 laptop">
+      <h3>HP ProBook x360 G9</h3>
+      <p class="price">N185,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>9th generation platform</li>
+          <li>8GB RAM</li>
+          <li>128GB SSD storage</li>
+          <li>Convertible x360 form factor</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20ProBook%20x360%20G9">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/hp-1040g1.jpg' %}" alt="HP 1040G1 laptop">
+      <h3>HP 1040G1</h3>
+      <p class="price">N385,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>8GB RAM</li>
+          <li>180GB SSD storage</li>
+          <li>Sleek business laptop design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201040G1">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/Laptop Bekas Hp EliteBook Folio 1040 G3 Core I7 Gen 6 _.jfif' %}" alt="HP 1040G3 laptop with i7">
+      <h3>HP 1040G3</h3>
+      <p class="price">N310,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i7 processor</li>
+          <li>16GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>EliteBook premium series</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201040G3%2016GB%20256SSD%20i7">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/1040 g2' %}" alt="HP 1040G2 laptop with 256GB SSD and i5">
+      <h3>HP 1040G2</h3>
+      <p class="price">N400,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core i5 processor</li>
+          <li>8GB RAM</li>
+          <li>512GB SSD storage</li>
+          <li>Business-class premium design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%201040G2%208GB%20256SSD%20i5">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Laptops/HP x2 G1' %}" alt="HP x2 G1 detachable laptop">
+      <h3>HP x2 G1</h3>
+      <p class="price">N350,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Intel Core m5 processor</li>
+          <li>8GB RAM</li>
+          <li>256GB SSD storage</li>
+          <li>2-in-1 detachable style</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20HP%20x2%20G1">Order on WhatsApp</a>
+    </article>
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20laptop%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the laptop I am looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20laptop%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the laptop I am looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>

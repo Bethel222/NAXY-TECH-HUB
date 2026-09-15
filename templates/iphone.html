@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'phones' %}" class="back-link">Back to phones</a>
+    <p class="eyebrow">Apple collection</p>
+    <h1>UK Used iPhones</h1>
+    <p class="page-header__text">Browse available UK-used iPhones and message Naxy Tech Gadgets for the latest stock updates and condition details.</p>
+  </header>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="iphone-search">Search iPhones</label>
+    <input id="iphone-search" class="search-panel__input" type="search" placeholder="Search by iPhone model or storage" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching iPhones found. Try another model name, storage size, or budget.</p>
+  </section>
+
+  <main class="product-section">
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Apple iPhone 8.jfif' %}" alt="iPhone 8">
+      <h3>iPhone 8</h3>
+      <p class="price">64GB = N110,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>64GB storage</li>
+          <li>Compact iPhone design</li>
+          <li>Suitable for everyday use</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%208%2064GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Used iPhone X 64gb Silver (Unlocked) (Used ).jfif' %}" alt="iPhone X">
+      <h3>iPhone X</h3>
+      <p class="price">64GB = N205,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>64GB storage</li>
+          <li>Edge-to-edge display</li>
+          <li>Face ID support</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%20X%2064GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/iPhone Xr 64GB.jfif' %}" alt="iPhone XR">
+      <h3>iPhone XR</h3>
+      <p class="price">64GB = N240,000<br>128GB = N280,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>Available in 64GB and 128GB</li>
+          <li>Liquid Retina display</li>
+          <li>Strong battery performance</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%20XR">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Apple iPhone XS Gold Preview.jfif' %}" alt="iPhone XS Max">
+      <h3>iPhone XS Max</h3>
+      <p class="price">64GB = N305,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>64GB storage</li>
+          <li>Large Super Retina display</li>
+          <li>Premium iPhone build</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%20XS%20Max%2064GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/iPhone 11.jfif' %}" alt="iPhone 11">
+      <h3>iPhone 11</h3>
+      <p class="price">128GB = N310,000<br>256GB = N350,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>Available in 128GB and 256GB</li>
+          <li>Dual-camera system</li>
+          <li>Popular daily-use iPhone model</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2011">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/iPhone 11 Pro - 64GB - Space Grey - Grade A - The iOutlet.jfif' %}" alt="iPhone 11 Pro">
+      <h3>iPhone 11 Pro</h3>
+      <p class="price">64GB = N385,000<br>256GB = N410,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>Available in 64GB and 256GB</li>
+          <li>Triple-camera system</li>
+          <li>Premium Pro performance</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2011%20Pro">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/iPhone 11 Pro Max - Best Smartphone to Buy Right Now.jfif' %}" alt="iPhone 11 Pro Max">
+      <h3>iPhone 11 Pro Max</h3>
+      <p class="price">64GB = N435,000<br>256GB = N500,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>Available in 64GB and 256GB</li>
+          <li>Large display and battery</li>
+          <li>Triple-camera Pro Max setup</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2011%20Pro%20Max">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/iPhone 12.jfif' %}" alt="iPhone 12">
+      <h3>iPhone 12</h3>
+      <p class="price">128GB = N350,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>128GB storage</li>
+          <li>OLED display</li>
+          <li>Modern flat-edge design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2012%20128GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Iphone 12 Pro Max pre owned, no scratches 64GB.jfif' %}" alt="iPhone 12 Pro">
+      <h3>iPhone 12 Pro</h3>
+      <p class="price">128GB = N450,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>128GB storage</li>
+          <li>Pro camera system</li>
+          <li>Premium stainless design</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2012%20Pro%20128GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Iphone 12 Pro Max pre owned, no scratches 64GB.jfif' %}" alt="iPhone 12 Pro Max">
+      <h3>iPhone 12 Pro Max</h3>
+      <p class="price">128GB = N480,000<br>256GB = N550,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>Available in 128GB and 256GB</li>
+          <li>Large Pro Max display</li>
+          <li>Premium camera and battery setup</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2012%20Pro%20Max">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Apple iPhone 13 128GB Midnight (SIM-free) _ NFM.jfif' %}" alt="iPhone 13">
+      <h3>iPhone 13</h3>
+      <p class="price">128GB = N450,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>128GB storage</li>
+          <li>Dual-camera system</li>
+          <li>Fast and reliable daily-use model</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2013%20128GB">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Apple iPhone 15 Pro (1 to) - Titane Bleu.jfif' %}" alt="iPhone 15 Pro">
+      <h3>iPhone 15 Pro</h3>
+      <p class="price">128GB = N1,100,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>UK used device</li>
+          <li>128GB storage</li>
+          <li>Pro performance and camera features</li>
+          <li>Premium flagship model</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2015%20Pro%20128GB">Order on WhatsApp</a>
+    </article>
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20iPhone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the iPhone I am looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20iPhone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the iPhone I am looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+

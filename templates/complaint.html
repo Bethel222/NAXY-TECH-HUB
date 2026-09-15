@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Form | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Customer support</p>
+    <h1>Submit a Complaint</h1>
+    <p class="page-header__text">Fill in the form below and your email app will open a complaint message addressed to Naxy Tech Gadgets.</p>
+  </header>
+
+  <main class="support-page">
+    <section class="support-card">
+      <form class="support-form" data-complaint-form>
+        <div class="support-form__grid">
+          <div class="support-form__field">
+            <label for="complaint-name">Full name</label>
+            <input id="complaint-name" name="customer_name" type="text" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="support-form__field">
+            <label for="complaint-email">Email address</label>
+            <input id="complaint-email" name="customer_email" type="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="support-form__field">
+            <label for="complaint-phone">Phone number</label>
+            <input id="complaint-phone" name="customer_phone" type="tel" placeholder="Enter your phone number" required>
+          </div>
+
+          <div class="support-form__field">
+            <label for="complaint-subject">Complaint subject</label>
+            <input id="complaint-subject" name="complaint_subject" type="text" placeholder="Order issue, delivery issue, product concern" required>
+          </div>
+
+          <div class="support-form__field support-form__field--full">
+            <label for="complaint-message">Complaint details</label>
+            <textarea id="complaint-message" name="complaint_message" placeholder="Explain the issue clearly so we can help you quickly." required></textarea>
+          </div>
+        </div>
+
+        <p class="support-form__note">Complaint email will be sent to `naxytechgadgets@gmail.com`.</p>
+        <button class="btn blue" type="submit">Send Complaint by Email</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("[data-complaint-form]");
+      if (!form) return;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = form.querySelector("#complaint-name")?.value.trim();
+        const email = form.querySelector("#complaint-email")?.value.trim();
+        const phone = form.querySelector("#complaint-phone")?.value.trim();
+        const subject = form.querySelector("#complaint-subject")?.value.trim();
+        const message = form.querySelector("#complaint-message")?.value.trim();
+
+        if (!name || !email || !phone || !subject || !message) {
+          alert("Please fill in all complaint details before sending.");
+          return;
+        }
+
+        const mailSubject = encodeURIComponent(`Customer Complaint: ${subject}`);
+        const mailBody = encodeURIComponent(
+          [
+            "Hello Naxy Tech Gadgets,",
+            "",
+            "I want to submit this complaint:",
+            "",
+            `Full name: ${name}`,
+            `Email address: ${email}`,
+            `Phone number: ${phone}`,
+            `Subject: ${subject}`,
+            "",
+            "Complaint details:",
+            message
+          ].join("\n")
+        );
+
+        window.location.href = `mailto:naxytechgadgets@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+      });
+    });
+  </script>
+
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+

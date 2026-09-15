@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Phones | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Phone collection</p>
+    <h1>Smart Phones</h1>
+    <p class="page-header__text">Browse available phones and order directly on WhatsApp. Open each card to view key specs before placing your order.</p>
+  </header>
+
+  <section class="category-section brand-section">
+    <div class="section-heading">
+      <p class="eyebrow">Shop by brand</p>
+      <p class="page-header__text">Open a brand section if you want to check iPhone or Samsung options separately.</p>
+    </div>
+
+    <div class="category-wrap">
+      <a href="{% url 'iphone' %}" class="category-card">
+        <span class="icon">&#127822;</span>
+        <strong>iPhone</strong>
+        <span>Browse Apple iPhone stock and message us for the latest available models.</span>
+      </a>
+
+      <a href="{% url 'samsung' %}" class="category-card">
+        <span class="icon">&#128241;</span>
+        <strong>Samsung</strong>
+        <span>Check Samsung Galaxy stock and reach out for updated Samsung listings.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="phone-search">Search phones</label>
+    <input id="phone-search" class="search-panel__input" type="search" placeholder="Search by phone name or spec" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching phones found. Try another model name, keyword, or budget.</p>
+  </section>
+
+  <main class="product-section">
+    <!-- Hardcoded Static Phone Articles -->
+    <article class="product-card">
+      <img src="{% static 'images/Iphones/Apple iPhone 15 Pro (1 to) - Titane Bleu.jfif' %}" alt="iPhone 15 Pro Max">
+      <h3>iPhone 15 Pro Max</h3>
+      <p class="price">N1,450,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>A17 Pro chip with 6-core GPU</li>
+          <li>Titanium design with textured matte glass</li>
+          <li>48MP Main camera with 5x Telephoto</li>
+          <li>Super Retina XDR display with ProMotion</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20iPhone%2015%20Pro%20Max">Order on WhatsApp</a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/Samsung phones/samsung-s24-ultra.jfif' %}" alt="Samsung Galaxy S24 Ultra">
+      <h3>Samsung Galaxy S24 Ultra</h3>
+      <p class="price">N1,380,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>200MP Camera with Galaxy AI feature suite</li>
+          <li>Snapdragon 8 Gen 3 Mobile Platform</li>
+          <li>Built-in S Pen included</li>
+          <li>5000mAh long-lasting battery</li>
+        </ul>
+      </details>
+      <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20S24%20Ultra">Order on WhatsApp</a>
+    </article>
+
+    <!-- Dynamic Database Products Loop -->
+    {% for product in products %}
+      <article class="product-card">
+        {% if product.image %}
+          <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        {% else %}
+          <img src="{% static 'images/NAXY LOGO.png' %}" alt="{{ product.name }}">
+        {% endif %}
+
+        <h3>{{ product.name }}</h3>
+
+        <p class="price">
+          {% if product.price_text %}
+            {{ product.price_text|linebreaksbr }}
+          {% else %}
+            N{{ product.price }}
+          {% endif %}
+        </p>
+
+        {% if product.description or product.features %}
+          <details>
+            <summary class="btn blue">View Details</summary>
+            <ul class="features">
+              {% if product.features %}
+                {% for feature in product.get_features_list %}
+                  <li>{{ feature }}</li>
+                {% endfor %}
+              {% else %}
+                <li>{{ product.description }}</li>
+              {% endif %}
+            </ul>
+          </details>
+        {% endif %}
+
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20{{ product.name|urlencode }}">Order on WhatsApp</a>
+      </article>
+    {% endfor %}
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20phone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the phone I'm looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20phone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the phone I'm looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>

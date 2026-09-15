@@ -1,0 +1,554 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'phones' %}" class="back-link">Back to phones</a>
+    <p class="eyebrow">Galaxy collection</p>
+    <h1>Samsung Phones</h1>
+    <p class="page-header__text">Browse available Samsung stock below. We have both UK-used and newer Samsung devices available across different series.</p>
+  </header>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="samsung-search">Search Samsung phones</label>
+    <input id="samsung-search" class="search-panel__input" type="search" placeholder="Search by Samsung model or storage" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching Samsung phones found. Try another model name or storage size.</p>
+  </section>
+
+  <section class="catalog-group">
+    <div class="section-heading">
+      <p class="eyebrow">Pre-owned stock</p>
+      <h2>UK Used Samsung</h2>
+    </div>
+
+    <main class="product-section">
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/SAMSUNG Galaxy Note 10+ Plus (256GB, 12GB).jfif' %}" alt="Samsung Note 10">
+        <h3>Samsung Note 10</h3>
+        <p class="price">12GB+256GB = N330,000<br>12GB+512GB = N380,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>Available in 256GB and 512GB</li>
+            <li>Large AMOLED display</li>
+            <li>S Pen support</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Note%2010">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Should you buy the Samsung Galaxy Note 10+ in 2020_.jfif' %}" alt="Samsung Note 10 Plus">
+        <h3>Samsung Note 10 Plus</h3>
+        <p class="price">12GB+256GB = N400,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>12GB RAM + 256GB storage</li>
+            <li>Large immersive display</li>
+            <li>S Pen support</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Note%2010%20Plus">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-note-20-ultra.jfif' %}" alt="Samsung Note 20 Ultra">
+        <h3>Samsung Note 20 Ultra</h3>
+        <p class="price">12GB+128GB = N520,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>12GB RAM + 128GB storage</li>
+            <li>Premium flagship display</li>
+            <li>S Pen productivity features</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Note%2020%20Ultra">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/SAMSUNG Galaxy Note 10+ Plus (256GB, 12GB).jfif' %}" alt="Samsung S10 Plus">
+        <h3>Samsung S10 Plus</h3>
+        <p class="price">8GB+128GB = N320,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>8GB RAM + 128GB storage</li>
+            <li>Infinity display</li>
+            <li>Premium Galaxy S series finish</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S10%20Plus">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/SAMSUNG S9PLUS.jpg' %}" alt="Samsung S9 Plus">
+        <h3>Samsung S9 Plus</h3>
+        <p class="price">6GB+64GB = N200,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>6GB RAM + 64GB storage</li>
+            <li>Curved display design</li>
+            <li>Solid daily performance</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S9%20Plus">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s9.jfif' %}" alt="Samsung S9">
+        <h3>Samsung S9</h3>
+        <p class="price">4GB+64GB = N195,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>4GB RAM + 64GB storage</li>
+            <li>Compact Galaxy S series build</li>
+            <li>Curved edge display</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S9">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung Unveils Galaxy S8 and S8+ With Infinity___.jfif' %}" alt="Samsung S8">
+        <h3>Samsung S8</h3>
+        <p class="price">4GB+64GB = N185,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>4GB RAM + 64GB storage</li>
+            <li>Slim bezel display</li>
+            <li>Classic Galaxy flagship style</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S8">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung S8 plus.jfif' %}" alt="Samsung S8 Plus">
+        <h3>Samsung S8 Plus</h3>
+        <p class="price">4GB+64GB = N195,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>4GB RAM + 64GB storage</li>
+            <li>Larger display than S8</li>
+            <li>Premium curved Galaxy build</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S8%20Plus">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s21-5g.jfif' %}" alt="Samsung S21 Ultra">
+        <h3>Samsung S21 Ultra</h3>
+        <p class="price">12GB+128GB = N355,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>12GB RAM + 128GB storage</li>
+            <li>Flagship Ultra performance</li>
+            <li>Premium camera setup</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S21%20Ultra%2012GB%20128GB">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s22-ultra.jfif' %}" alt="Samsung S22 Ultra">
+        <h3>Samsung S22 Ultra</h3>
+        <p class="price">12GB+256GB = N535,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>12GB RAM + 256GB storage</li>
+            <li>Ultra flagship design</li>
+            <li>S Pen support</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S22%20Ultra%2012GB%20256GB">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Leaks Reveal the Design of the Samsung Galaxy S20 Ultra and Ultra 5G _ Digital Trends.jfif' %}" alt="Samsung S20 Ultra">
+        <h3>Samsung S20 Ultra</h3>
+        <p class="price">12GB+128GB = N300,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>12GB RAM + 128GB storage</li>
+            <li>Large flagship display</li>
+            <li>Premium camera system</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S20%20Ultra">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s20-plus.jfif' %}" alt="Samsung S20">
+        <h3>Samsung S20</h3>
+        <p class="price">8GB+128GB = N280,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>8GB RAM + 128GB storage</li>
+            <li>Compact Galaxy flagship</li>
+            <li>Balanced daily performance</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S20">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/s21.jpg' %}" alt="Samsung S21 5G">
+        <h3>Samsung S21 5G</h3>
+        <p class="price">8GB+128GB = N330,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>8GB RAM + 128GB storage</li>
+            <li>5G connectivity</li>
+            <li>Modern Galaxy flagship series</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S21%205G%208GB%20128GB">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung Galaxy A90.jfif' %}" alt="Samsung A90">
+        <h3>Samsung A90</h3>
+        <p class="price">6GB+128GB = N250,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>6GB RAM + 128GB storage</li>
+            <li>Large screen design</li>
+            <li>Midrange Samsung option</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A90">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-a51.jfif' %}" alt="Samsung A51">
+        <h3>Samsung A51</h3>
+        <p class="price">6GB+128GB = N230,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>6GB RAM + 128GB storage</li>
+            <li>Quad-camera style</li>
+            <li>Reliable Samsung A series model</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A51">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung Galaxy A33 5G 128GB Dual _ Unlocked - White _ Premium Refurbished.jfif' %}" alt="Samsung A33">
+        <h3>Samsung A33</h3>
+        <p class="price">6GB+128GB = N280,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>6GB RAM + 128GB storage</li>
+            <li>Modern Samsung A series design</li>
+            <li>Everyday performance and storage balance</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A33">Order on WhatsApp</a>
+      </article>
+
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Sell Old Samsung Galaxy Z Fold 4 5G at Best Price.jfif' %}" alt="Samsung Galaxy Z Fold 4">
+        <h3>Samsung Galaxy Z Fold 4</h3>
+        <p class="price">256GB = N800,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>UK used device</li>
+            <li>256GB storage</li>
+            <li>Foldable premium design</li>
+            <li>Large multitasking display</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20Z%20Fold%204">Order on WhatsApp</a>
+      </article>
+    </main>
+  </section>
+
+  <section class="catalog-group">
+    <div class="section-heading">
+      <p class="eyebrow">Fresh stock</p>
+      <h2>New Samsung</h2>
+    </div>
+
+    <main class="product-section">
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/fold 3.jpg' %}" alt="Samsung Galaxy Z Fold 3 5G">
+        <h3>Samsung Galaxy Z Fold 3 5G</h3>
+        <p class="price">12GB+256GB = N750,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>12GB RAM + 256GB storage</li>
+            <li>Foldable 5G design</li>
+            <li>Large multitasking display</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20Z%20Fold%203%205G">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung Z Fold 6.jfif' %}" alt="Samsung Galaxy Z Fold 6">
+        <h3>Samsung Galaxy Z Fold 6</h3>
+        <p class="price">12GB+512GB = N1,600,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>12GB RAM + 512GB storage</li>
+            <li>Premium foldable flagship</li>
+            <li>Built for multitasking</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20Z%20Fold%206">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Why Samsung Galaxy Z Fold7 Sets the Foldable Gold Standard in 2025.jfif' %}" alt="Samsung Galaxy Z Fold 7">
+        <h3>Samsung Galaxy Z Fold 7</h3>
+        <p class="price">256GB = N1,900,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>256GB storage</li>
+            <li>Next-generation foldable design</li>
+            <li>Premium Samsung flagship class</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20Z%20Fold%207">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Galaxy Tab A9.jfif' %}" alt="Samsung Galaxy Tab A9">
+        <h3>Samsung Galaxy Tab A9</h3>
+        <p class="price">4GB+64GB = N220,500</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>4GB RAM + 64GB storage</li>
+            <li>Portable Samsung tablet</li>
+            <li>Suitable for entertainment and study</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20Tab%20A9">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s24-ultra.jfif' %}" alt="Samsung S24 Ultra">
+        <h3>Samsung S24 Ultra</h3>
+        <p class="price">8GB+256GB = N1,350,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>8GB RAM + 256GB storage</li>
+            <li>Current Ultra flagship</li>
+            <li>Premium Samsung performance</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S24%20Ultra">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-s22-ultra.jfif' %}" alt="Samsung S22 Ultra">
+        <h3>Samsung S22 Ultra</h3>
+        <p class="price">256GB = N550,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>256GB storage</li>
+            <li>Ultra series flagship design</li>
+            <li>S Pen support</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S22%20Ultra%20256GB">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Leaks Reveal the Design of the Samsung Galaxy S20 Ultra and Ultra 5G _ Digital Trends.jfif' %}" alt="Samsung Galaxy S20 Ultra 5G">
+        <h3>Samsung Galaxy S20 Ultra 5G</h3>
+        <p class="price">12GB+128GB = N400,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>12GB RAM + 128GB storage</li>
+            <li>5G connectivity</li>
+            <li>Large flagship display</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20S20%20Ultra%205G">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/s21.jpg' %}" alt="Samsung S21 5G open box">
+        <h3>Samsung S21 5G</h3>
+        <p class="price">8GB+128GB (Open Box) = N450,000<br>128GB = N465,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New / open-box variants available</li>
+            <li>8GB RAM + 128GB storage</li>
+            <li>5G connectivity</li>
+            <li>Modern Galaxy flagship design</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20S21%205G">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/used Pre-owned Samsung Galaxy S21 Ultra 5G 512gb G998u Unlocked (Fair), Black.jfif' %}" alt="Samsung Galaxy S21 Ultra 5G">
+        <h3>Samsung Galaxy S21 Ultra 5G</h3>
+        <p class="price">256GB = N450,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>256GB storage</li>
+            <li>Ultra flagship design</li>
+            <li>Strong Samsung camera and display features</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20S21%20Ultra%205G">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/s23.jfif' %}" alt="Samsung Galaxy S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">128GB = N480,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>128GB storage</li>
+            <li>Flagship Galaxy S series build</li>
+            <li>Balanced premium performance</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20Galaxy%20S23">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/Samsung Galaxy A05 (A055) Dual LTE 64GB 4GB RAM Black.jfif' %}" alt="Samsung A05">
+        <h3>Samsung A05</h3>
+        <p class="price">4GB+64GB = N165,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>4GB RAM + 64GB storage</li>
+            <li>Entry-level Samsung A series</li>
+            <li>Good for everyday basic use</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A05">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/samsung-a06.jfif' %}" alt="Samsung A06">
+        <h3>Samsung A06</h3>
+        <p class="price">4GB+64GB = N170,000<br>4GB+128GB = N200,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>Available in 64GB and 128GB</li>
+            <li>Samsung A series design</li>
+            <li>Suitable for everyday smartphone use</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A06">Order on WhatsApp</a>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/Samsung phones/SAMSUNG A07 _ 4_128GB _ 1 YEAR SAMSUNG SG WARRANTY.jfif' %}" alt="Samsung A07">
+        <h3>Samsung A07</h3>
+        <p class="price">4GB+64GB = N180,000<br>4GB+128GB = N195,000</p>
+        <details>
+          <summary class="btn blue">View Details</summary>
+          <ul class="features">
+            <li>New device</li>
+            <li>Available in 64GB and 128GB</li>
+            <li>Updated Samsung A series option</li>
+            <li>Balanced storage choices</li>
+          </ul>
+        </details>
+        <a class="btn green" href="https://wa.me/2347049763653?text=Hello%20I%20want%20Samsung%20A07">Order on WhatsApp</a>
+      </article>
+    </main>
+  </section>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20Samsung%20phone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the Samsung phone I am looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20Samsung%20phone%20I%20am%20looking%20for" class="bulk-order-banner__text">
+        Didn't see the Samsung phone I am looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+
+

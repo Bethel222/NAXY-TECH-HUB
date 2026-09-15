@@ -1,0 +1,520 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Wearables | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="catalog-page">
+  {% comment %} <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div> {% endcomment %}
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Wearable tech</p>
+    <h1>Smart Wearables</h1>
+    <p class="page-header__text">Explore smartwatch and AI glasses options, and message Naxy directly for current
+      colors, prices, and stock.</p>
+  </header>
+
+  <section class="search-panel" data-product-search-root>
+    <label class="search-panel__label" for="smartwatch-search">Search smart wearables</label>
+    <input id="smartwatch-search" class="search-panel__input" type="search"
+      placeholder="Search by wearable name or spec" data-product-search>
+    <p class="search-panel__empty" data-product-search-empty hidden>No matching wearables found. Try another model
+      name, keyword, or budget.</p>
+  </section>
+
+  <main class="product-section">
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/1.jpg' %}" alt="Smartwatch collection">
+      <h3>D300 Smartwatch</h3>
+      <p class="price">N23,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📞 Bluetooth calling support</li>
+          <li>🔔 Smart notifications (WhatsApp, SMS, calls)</li>
+          <li>❤️ Heart rate & sleep monitoring</li>
+          <li>🏃‍♂️ Fitness & sports tracking</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long-lasting battery</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/5.jpg' %}" alt="Smartwatch collection">
+      <h3>P9 Ultra Smartwatch</h3>
+      <p class="price">N22,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Large full-touch display</li>
+          <li>📞 Bluetooth calling</li>
+          <li>🔔 Notifications (WhatsApp, SMS, calls)</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Multiple sports modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/2.jpg' %}" alt="Smartwatch collection">
+      <h3>Hello Watch</h3>
+      <p class="price">N85,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Large full-touch display</li>
+          <li>📞 Make & receive calls</li>
+          <li>💬 WhatsApp & Gmail messaging</li>
+          <li>🎥 Watch TikTok & YouTube</li>
+          <li>🔗 Link Google account</li>
+          <li>❤️ Heart rate & fitness tracking</li>
+          <li>🏃‍♂️ Sports modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>💡 Android & iPhone compatible</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/7.jpg' %}" alt="Smartwatch collection">
+      <h3>D55 Ultra Max</h3>
+      <p class="price">N30,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Large full-touch display</li>
+          <li>📱 Large touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep monitoring</li>
+          <li>🏃‍♂️ Multiple sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long-lasting battery</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/3.jpg' %}" alt="Smartwatch collection">
+      <h3>S9 Smart Watches</h3>
+      <p class="price">N18,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Large full-touch display</li>
+          <li>📱 Large touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep monitoring</li>
+          <li>🏃‍♂️ Multiple sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long-lasting battery</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/4.jpg' %}" alt="Smartwatch collection">
+      <h3>I60 Suit Extreme </h3>
+      <p class="price">N30,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>⌚ Dual watch faces (two watches in one)</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Fitness & sports monitoring</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Works with Android & iPhone (basic features only)</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/6.jpg' %}" alt="Smartwatch collection">
+      <h3>D100 </h3>
+      <p class="price">N15,500</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/8.jpg' %}" alt="Smartwatch collection">
+      <h3>Ultra 3 Mini </h3>
+      <p class="price">N27,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/9.jpg' %}" alt="Smartwatch collection">
+      <h3>D96 Plus </h3>
+      <p class="price">N25,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/14.jpg' %}" alt="Smartwatch collection">
+      <h3>ROCK 006</h3>
+      <p class="price">N23,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/16.jpg' %}" alt="Smartwatch collection">
+      <h3>TLTM-M18 </h3>
+      <p class="price">N14,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/ULTRA 9 PRO.jpeg' %}" alt="Smartwatch collection">
+      <h3>Ultra 9 pro2</h3>
+      <p class="price">N22,500</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/Y99 ULTRA 3.jpeg' %}" alt="Smartwatch collection">
+      <h3>Y99 Ultra 3</h3>
+      <p class="price">N22,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/ULTRA 2.jpeg' %}" alt="Smartwatch collection">
+      <h3>ULTRA 2 </h3>
+      <p class="price">N25,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/TK703.jpeg' %}" alt="Smartwatch collection">
+      <h3>TK703</h3>
+      <p class="price">N23,500</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/17.jpg' %}" alt="Smartwatch collection">
+      <h3>Series 11 Promax </h3>
+      <p class="price">N15,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/c4 pro.jpeg' %}" alt="Smartwatch collection">
+      <h3>C4 pro</h3>
+      <p class="price">N25,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/i20 ultra 3 max suit.jpg' %}" alt="Smartwatch collection">
+      <h3>i20 Ultra 3 Max Suit</h3>
+      <p class="price">N23,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>📱 Touchscreen display</li>
+          <li>📞 Make & receive calls via Bluetooth</li>
+          <li>🔔 Notifications: WhatsApp, SMS, calls</li>
+          <li>❤️ Heart rate & sleep tracking</li>
+          <li>🏃‍♂️ Sports & fitness modes</li>
+          <li>🎵 Music & camera control</li>
+          <li>🔋 Long battery life</li>
+          <li>💡 Compatible with Android & iPhone</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+
+    <article class="product-card">
+      <img src="{% static 'images/SMART WATCHES/P6 Ultra Smart Watch.jpeg' %}" alt="Smartwatch collection">
+      <h3>P6 Ultra Smart Watch</h3>
+      <p class="price">N23,000</p>
+      <details>
+        <summary class="btn blue">View Details</summary>
+        <ul class="features">
+          <li>Ultra Smart Watch</li>
+          <li>8 Silicon Straps</li>
+          <li>Transparent Watch Casing</li>
+          <li>Digital Stylus Pen</li>
+          <li>TWS Airpod</li>
+          <li>PD Charging Adapter</li>
+        </ul>
+      </details>
+
+      <a class="btn green"
+        href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20see%20your%20smartwatch%20options">
+        Order on WhatsApp
+      </a>
+    </article>
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20smartwatch%20I%20am%20looking%20for"
+        class="bulk-order-banner__text">
+        Didn't see the smartwatch I'm looking for? Kindly DM us.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20didn%27t%20see%20the%20smartwatch%20I%20am%20looking%20for"
+        class="bulk-order-banner__text">
+        Didn't see the smartwatch I'm looking for? Kindly DM us.
+      </a>
+    </div>
+  </div>
+
+  <script src="{% static 'js/gallery.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+
+</html>
+

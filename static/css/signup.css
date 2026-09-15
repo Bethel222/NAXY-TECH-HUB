@@ -1,0 +1,270 @@
+/* ===========================
+   LOGIN & SIGNUP PAGE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body.login-page{
+    background:linear-gradient(135deg,#eef5ff,#dfefff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+.site-loader{
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.site-loader__card{
+    text-align:center;
+}
+
+.site-loader__logo{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.site-loader__brand{
+    font-size:24px;
+    font-weight:bold;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.site-loader__bar{
+    width:220px;
+    height:6px;
+    background:#ddd;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.site-loader__bar::after{
+    content:"";
+    display:block;
+    width:40%;
+    height:100%;
+    background:#0d6efd;
+    animation:loading 1.5s infinite;
+}
+
+@keyframes loading{
+    from{
+        transform:translateX(-100%);
+    }
+
+    to{
+        transform:translateX(300%);
+    }
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.login-shell{
+    width:100%;
+    max-width:520px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.login-card{
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.back-link{
+    text-decoration:none;
+    color:#0d6efd;
+    font-weight:600;
+    display:inline-block;
+    margin-bottom:25px;
+}
+
+.back-link:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   BRAND
+=========================== */
+
+.login-card__brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.login-card__logo{
+    width:75px;
+}
+
+.eyebrow{
+    color:#0d6efd;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+    text-transform:uppercase;
+}
+
+.login-card h1{
+    font-size:30px;
+    color:#222;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.login-form{
+    margin-top:20px;
+}
+
+.login-form__field{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+.login-form__field span{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.login-form__field input{
+    width:100%;
+    padding:14px;
+    border:1px solid #d8d8d8;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.login-form__field input:focus{
+    border-color:#0d6efd;
+    outline:none;
+    box-shadow:0 0 0 4px rgba(13,110,253,.15);
+}
+
+/* ===========================
+   MESSAGE
+=========================== */
+
+.login-message{
+    background:#d1e7dd;
+    color:#0f5132;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.btn.blue{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.btn.blue:hover{
+    background:#0b5ed7;
+}
+
+.btn.green{
+    background:#198754;
+    color:#fff;
+    margin-top:15px;
+}
+
+.btn.green:hover{
+    background:#157347;
+}
+
+/* ===========================
+   NOTE
+=========================== */
+
+.login-card__note{
+    text-align:center;
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#666;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .login-card{
+        padding:30px;
+    }
+
+    .login-card__brand{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .login-card h1{
+        font-size:24px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .login-card{
+        padding:20px;
+    }
+
+    .login-card__logo{
+        width:60px;
+    }
+
+    .btn{
+        font-size:15px;
+    }
+
+}

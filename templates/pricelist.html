@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price List | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="catalog-page">
+  {% comment %} <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div> {% endcomment %}
+
+  <header class="page-header">
+    <a href="{% url "index" %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Store pricing</p>
+    <h1>Price List</h1>
+    <p class="page-header__text">Here is a quick view of current prices across the store. Product availability and final confirmation may still depend on current stock.</p>
+  </header>
+
+  <main class="price-list-page">
+    <section class="price-list-section">
+      <h2>Phones</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>REDMI A5</span><strong>N120,000</strong></div>
+        <div class="price-list-row"><span>INFINIX SMART 10 PLUS</span><strong>N135,000</strong></div>
+        <div class="price-list-row"><span>REDMI 15C</span><strong>4GB+128GB N150,000 / 6GB+128GB N165,000 / 8GB+256GB N185,000</strong></div>
+        <div class="price-list-row"><span>REDMI 14C</span><strong>4GB+128GB N138,000 / 6GB+128GB N165,000 / 8GB+256GB N175,000</strong></div>
+        <div class="price-list-row"><span>REDMI 13</span><strong>6GB+128GB N180,000 / 8GB+128GB N202,500 / 8GB+256GB N210,500</strong></div>
+        <div class="price-list-row"><span>REDMI A3 PRO</span><strong>4GB+128GB N140,000</strong></div>
+        <div class="price-list-row"><span>REDMI A3X</span><strong>3GB+64GB N101,000 / 4GB+128GB N128,000</strong></div>
+        <div class="price-list-row"><span>REDMI NOTE 13</span><strong>8GB+256GB N300,000</strong></div>
+        <div class="price-list-row"><span>TECNO SPARK 20</span><strong>8GB+256GB N212,500</strong></div>
+        <div class="price-list-row"><span>REDMI NOTE 14</span><strong>8GB+128GB N265,000</strong></div>
+        <div class="price-list-row"><span>TECNO SPARK 20 PRO</span><strong>8GB+256GB N275,000</strong></div>
+        <div class="price-list-row"><span>TECNO SPARK 30C</span><strong>6GB+128GB N188,000</strong></div>
+        <div class="price-list-row"><span>TECNO SPARK 40</span><strong>4GB+128GB N165,000</strong></div>
+        <div class="price-list-row"><span>TECNO POP 9</span><strong>3GB+128GB N160,000</strong></div>
+        <div class="price-list-row"><span>TECNO POP 10</span><strong>3GB+64GB N118,000 / 3GB+128GB N135,000</strong></div>
+        <div class="price-list-row"><span>TECNO POP 10C</span><strong>2GB+64GB N115,000</strong></div>
+        <div class="price-list-row"><span>TECNO CAMON 40</span><strong>8GB+128GB N295,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>UK Used iPhones</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>iPhone 8</span><strong>64GB N110,000</strong></div>
+        <div class="price-list-row"><span>iPhone X</span><strong>64GB N205,000</strong></div>
+        <div class="price-list-row"><span>iPhone XR</span><strong>64GB N240,000 / 128GB N280,000</strong></div>
+        <div class="price-list-row"><span>iPhone XS Max</span><strong>64GB N305,000</strong></div>
+        <div class="price-list-row"><span>iPhone 11</span><strong>128GB N310,000 / 256GB N350,000</strong></div>
+        <div class="price-list-row"><span>iPhone 11 Pro</span><strong>64GB N385,000 / 256GB N410,000</strong></div>
+        <div class="price-list-row"><span>iPhone 11 Pro Max</span><strong>64GB N435,000 / 256GB N500,000</strong></div>
+        <div class="price-list-row"><span>iPhone 12</span><strong>128GB N350,000</strong></div>
+        <div class="price-list-row"><span>iPhone 12 Pro</span><strong>128GB N450,000</strong></div>
+        <div class="price-list-row"><span>iPhone 12 Pro Max</span><strong>128GB N480,000 / 256GB N550,000</strong></div>
+        <div class="price-list-row"><span>iPhone 13</span><strong>128GB N450,000</strong></div>
+        <div class="price-list-row"><span>iPhone 15 Pro</span><strong>128GB N1,100,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Samsung</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>Samsung Note 10</span><strong>12GB+256GB N330,000 / 12GB+512GB N380,000</strong></div>
+        <div class="price-list-row"><span>Samsung Note 10 Plus</span><strong>12GB+256GB N400,000</strong></div>
+        <div class="price-list-row"><span>Samsung Note 20 Ultra</span><strong>12GB+128GB N520,000</strong></div>
+        <div class="price-list-row"><span>Samsung S10 Plus</span><strong>8GB+128GB N320,000</strong></div>
+        <div class="price-list-row"><span>Samsung S9 Plus</span><strong>6GB+64GB N200,000</strong></div>
+        <div class="price-list-row"><span>Samsung S9</span><strong>4GB+64GB N195,000</strong></div>
+        <div class="price-list-row"><span>Samsung S8</span><strong>4GB+64GB N185,000</strong></div>
+        <div class="price-list-row"><span>Samsung S8 Plus</span><strong>4GB+64GB N195,000</strong></div>
+        <div class="price-list-row"><span>Samsung S21 Ultra</span><strong>12GB+128GB N355,000</strong></div>
+        <div class="price-list-row"><span>Samsung S22 Ultra</span><strong>12GB+256GB N535,000 / 256GB N550,000</strong></div>
+        <div class="price-list-row"><span>Samsung S20 Ultra</span><strong>12GB+128GB N300,000 / 12GB+128GB 5G N400,000</strong></div>
+        <div class="price-list-row"><span>Samsung S20</span><strong>8GB+128GB N280,000</strong></div>
+        <div class="price-list-row"><span>Samsung S21 5G</span><strong>8GB+128GB N330,000 / Open Box N450,000 / 128GB N465,000</strong></div>
+        <div class="price-list-row"><span>Samsung A90</span><strong>6GB+128GB N250,000</strong></div>
+        <div class="price-list-row"><span>Samsung A51</span><strong>6GB+128GB N230,000</strong></div>
+        <div class="price-list-row"><span>Samsung A33</span><strong>6GB+128GB N280,000</strong></div>
+        <div class="price-list-row"><span>Samsung Wide 4</span><strong>3GB+32GB N155,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy Z Fold 4</span><strong>256GB N800,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy Z Fold 3 5G</span><strong>12GB+256GB N750,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy Z Fold 6</span><strong>12GB+512GB N1,600,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy Z Fold 7</span><strong>256GB N1,900,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy Tab A9</span><strong>4GB+64GB N220,500</strong></div>
+        <div class="price-list-row"><span>Samsung S24 Ultra</span><strong>8GB+256GB N1,350,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy S21 Ultra 5G</span><strong>256GB N450,000</strong></div>
+        <div class="price-list-row"><span>Samsung Galaxy S23</span><strong>128GB N480,000</strong></div>
+        <div class="price-list-row"><span>Samsung A05</span><strong>4GB+64GB N165,000</strong></div>
+        <div class="price-list-row"><span>Samsung A06</span><strong>4GB+64GB N170,000 / 4GB+128GB N200,000</strong></div>
+        <div class="price-list-row"><span>Samsung A07</span><strong>4GB+64GB N180,000 / 4GB+128GB N195,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Laptops</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>HP EliteBook 840 G5</span><strong>N400,000</strong></div>
+        <div class="price-list-row"><span>HP EliteBook x360 1040 G7</span><strong>N850,000</strong></div>
+        <div class="price-list-row"><span>HP x2 2-in-1</span><strong>N400,000</strong></div>
+        <div class="price-list-row"><span>HP 1030G3</span><strong>N430,000</strong></div>
+        <div class="price-list-row"><span>HP 1030G4</span><strong>N450,000</strong></div>
+        <div class="price-list-row"><span>HP Spectre G2</span><strong>N365,000</strong></div>
+        <div class="price-list-row"><span>HP Victus</span><strong>N2,100,000</strong></div>
+        <div class="price-list-row"><span>HP ProBook x360 G1</span><strong>N150,000</strong></div>
+        <div class="price-list-row"><span>HP Stream G4</span><strong>N100,000</strong></div>
+        <div class="price-list-row"><span>HP Stream G5</span><strong>N110,000</strong></div>
+        <div class="price-list-row"><span>HP 1030G2</span><strong>N385,000</strong></div>
+        <div class="price-list-row"><span>HP 9480m</span><strong>N195,000</strong></div>
+        <div class="price-list-row"><span>HP 430G5</span><strong>N255,000</strong></div>
+        <div class="price-list-row"><span>HP 840G2</span><strong>N200,000</strong></div>
+        <div class="price-list-row"><span>HP ProBook x360 G3</span><strong>N180,000</strong></div>
+        <div class="price-list-row"><span>HP 1040G3</span><strong>N300,000 / N310,000</strong></div>
+        <div class="price-list-row"><span>HP 820G4</span><strong>N240,000 / N285,000</strong></div>
+        <div class="price-list-row"><span>HP 830G6</span><strong>N300,000</strong></div>
+        <div class="price-list-row"><span>HP 820G3</span><strong>N230,000 / N250,000</strong></div>
+        <div class="price-list-row"><span>HP ProBook x360 G9</span><strong>N185,000</strong></div>
+        <div class="price-list-row"><span>HP 1040G1</span><strong>N385,000</strong></div>
+        <div class="price-list-row"><span>HP 1040G2</span><strong>N400,000</strong></div>
+        <div class="price-list-row"><span>HP x2 G1</span><strong>N350,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Smart Wearables</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>D300 Smartwatch</span><strong>N23,000</strong></div>
+        <div class="price-list-row"><span>P9 Ultra Smartwatch</span><strong>N22,000</strong></div>
+        <div class="price-list-row"><span>Hello Watch</span><strong>N85,000</strong></div>
+        <div class="price-list-row"><span>D55 Ultra Max</span><strong>N30,000</strong></div>
+        <div class="price-list-row"><span>S9 Smart Watches</span><strong>N18,000</strong></div>
+        <div class="price-list-row"><span>I60 Suit Extreme</span><strong>N30,000</strong></div>
+        <div class="price-list-row"><span>D100</span><strong>N16,500</strong></div>
+        <div class="price-list-row"><span>Ultra 3 Mini</span><strong>N27,000</strong></div>
+        <div class="price-list-row"><span>D96 Plus</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>ROCK 006</span><strong>N23,000</strong></div>
+        <div class="price-list-row"><span>TLTM-M18</span><strong>N16,000</strong></div>
+        <div class="price-list-row"><span>Ultra 9 pro2</span><strong>N22,500</strong></div>
+        <div class="price-list-row"><span>Y99 Ultra 3</span><strong>N22,000</strong></div>
+        <div class="price-list-row"><span>ULTRA 2</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>TK703</span><strong>N23,500</strong></div>
+        <div class="price-list-row"><span>Series 11 Promax</span><strong>N15,000</strong></div>
+        <div class="price-list-row"><span>C4 pro</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>i20 Ultra 3 Max Suit</span><strong>N23,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Power Banks</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>New Age 10,000mAh</span><strong>N9,000</strong></div>
+        <div class="price-list-row"><span>New Age 22,500mAh</span><strong>N17,500</strong></div>
+        <div class="price-list-row"><span>New Age 33,000mAh</span><strong>N28,000</strong></div>
+        <div class="price-list-row"><span>New Age 44,000mAh</span><strong>N38,500</strong></div>
+        <div class="price-list-row"><span>New Age 55,000mAh</span><strong>N48,000</strong></div>
+        <div class="price-list-row"><span>New Age 66,000mAh</span><strong>N75,000</strong></div>
+        <div class="price-list-row"><span>Itel 20,000mAh</span><strong>N18,000</strong></div>
+        <div class="price-list-row"><span>Itel 30,000mAh</span><strong>N38,000</strong></div>
+        <div class="price-list-row"><span>Itel 60,000mAh</span><strong>N80,000</strong></div>
+        <div class="price-list-row"><span>CHUPEZ 20,000mAh</span><strong>N17,000</strong></div>
+        <div class="price-list-row"><span>CHUPEZ 30,000mAh</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>CHUPEZ 40,000mAh</span><strong>N35,000</strong></div>
+        <div class="price-list-row"><span>CHUPEZ 60,000mAh</span><strong>N25,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Tripods &amp; Ring Lights</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>Selfie Stick L16</span><strong>Price on request</strong></div>
+        <div class="price-list-row"><span>A14 Tripod</span><strong>Price on request</strong></div>
+        <div class="price-list-row"><span>C07 Tripod</span><strong>N22,000</strong></div>
+        <div class="price-list-row"><span>C12 Tripod</span><strong>N38,000</strong></div>
+        <div class="price-list-row"><span>C17 Tripod</span><strong>N38,000</strong></div>
+        <div class="price-list-row"><span>F-360T Tripod</span><strong>Price on request</strong></div>
+        <div class="price-list-row"><span>Tripod Stand Model 2</span><strong>N20,000</strong></div>
+        <div class="price-list-row"><span>JC-215 Tripod</span><strong>N16,000</strong></div>
+        <div class="price-list-row"><span>K29 Tripod</span><strong>N22,000</strong></div>
+        <div class="price-list-row"><span>P180 Plus Tripod</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>WT-3520 Tripod</span><strong>N22,000</strong></div>
+        <div class="price-list-row"><span>RGB Ring Light</span><strong>10 Inches N12,000 / 12 Inches N15,500 / 13 Inches N17,000 / 14 Inches N20,500 / 16 Inches N25,500 / 18 Inches N29,000 / 22 Inches N40,000</strong></div>
+        <div class="price-list-row"><span>Led Light Pro 800</span><strong>N45,000</strong></div>
+        <div class="price-list-row"><span>Led Light Pro 300</span><strong>N25,000</strong></div>
+        <div class="price-list-row"><span>Led Light Pro 600</span><strong>N35,000</strong></div>
+      </div>
+    </section>
+
+    <section class="price-list-section">
+      <h2>Earpods &amp; Audio Products</h2>
+      <div class="price-list-card">
+        <div class="price-list-row"><span>oraimo SpaceBuds Neo True Wireless Spatial Earbuds</span><strong>N18,800</strong></div>
+        <div class="price-list-row"><span>oraimo OpenSnap N Clip-On Open-Ear True Wireless Earbuds</span><strong>N30,900</strong></div>
+        <div class="price-list-row"><span>oraimo SpaceBuds Neo+</span><strong>N22,700</strong></div>
+        <div class="price-list-row"><span>oraimo SpaceBuds Lite</span><strong>N15,400</strong></div>
+        <div class="price-list-row"><span>oraimo SpaceBuds Air</span><strong>N15,000</strong></div>
+        <div class="price-list-row"><span>oraimo SpaceBuds Pro</span><strong>N52,600</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+

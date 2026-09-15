@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body class="landing-page">
+
+  <!-- ================= HEADER & NAVIGATION BAR ================= -->
+  <header class="main-header">
+    <nav class="navbar container">
+
+      <!-- Brand Logo -->
+      <a href="/" class="nav-brand">
+        <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="nav-logo">
+        <span class="nav-title">Naxy <span>Tech</span> Gadgets</span>
+      </a>
+
+      <!-- Navigation -->
+      <ul class="nav-menu" id="navMenu">
+
+        <li class="nav-item">
+          <a href="/" class="nav-link active">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle">
+            Categories <span class="arrow-down">&#9662;</span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'phones' %}" class="dropdown-item">📱 Smart Phones</a></li>
+            <li><a href="{% url 'laptops' %}" class="dropdown-item">💻 Laptops</a></li>
+            <li><a href="{% url 'smartwatch' %}" class="dropdown-item">⌚ Smart Wearables</a></li>
+            <li><a href="{% url 'powerbanks' %}" class="dropdown-item">🔋 Power Banks</a></li>
+            <li><a href="{% url 'earpods' %}" class="dropdown-item">🎧 Earpods & Speakers</a></li>
+            <li><a href="{% url 'tripods' %}" class="dropdown-item">📷 Tripods & Gear</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="{% url 'pricelist' %}" class="nav-link">Price List</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="{% url 'complaint' %}" class="nav-link">Support</a>
+        </li>
+
+      </ul>
+
+      <!-- Authentication -->
+      <div class="nav-auth">
+
+        {% if user.is_authenticated %}
+
+          <span class="welcome-text">
+            Hello, {{ user.first_name }}
+          </span>
+
+          <a href="{% url 'logout' %}" class="btn-auth btn-logout">
+            Logout
+          </a>
+
+        {% else %}
+
+          <a href="{% url 'login' %}" class="btn-auth btn-login">
+            Log In
+          </a>
+
+          <a href="{% url 'signup' %}" class="btn-auth btn-signup">
+            Sign Up
+          </a>
+
+        {% endif %}
+
+      </div>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero__brand">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="hero__logo">
+      <div>
+        <p class="eyebrow">Trusted gadget store</p>
+        <h1>Naxy Tech Gadgets</h1>
+        <p class="hero__text">Premium phones, laptops, smart wearables, earpods, and power banks with quick WhatsApp ordering and clean product photos.</p>
+        <div class="hero__actions">
+          <a href="{% url 'phones' %}" class="btn green">Shop phones</a>
+          <a href="{% url 'pricelist' %}" class="btn blue">View price list</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__panel">
+      <p class="hero__label">Shop by category</p>
+      <p>Choose a section below to view products and order directly on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <section class="category-section">
+      <div class="section-heading">
+        <p class="eyebrow">Collections</p>
+      </div>
+
+      <div class="category-wrap">
+        <a href="{% url "phones" %}" class="category-card">
+          <span class="icon">&#128241;</span>
+          <strong>Smart Phones</strong>
+          <span>Latest Android devices and everyday favorites.</span>
+        </a>
+
+        <a href="{% url "laptops" %}" class="category-card">
+          <span class="icon">&#128187;</span>
+          <strong>Laptops</strong>
+          <span>Portable systems for business, school, and work.</span>
+        </a>
+
+        <a href="{% url "smartwatch" %}" class="category-card">
+          <span class="icon">&#8986;</span>
+          <strong>Smart Wearables</strong>
+          <span>Smartwatches, AI glasses, and stylish wearable tech.</span>
+        </a>
+
+        <a href="{% url "powerbanks" %}" class="category-card">
+          <span class="icon">&#128267;</span>
+          <strong>Power Banks</strong>
+          <span>Reliable backup power for busy days and travel.</span>
+        </a>
+
+        <a href="{% url "earpods" %}" class="category-card">
+          <span class="icon">&#127911;</span>
+          <strong>Earpods &amp; Speakers</strong>
+          <span>Wireless audio picks for music, calls, and daily use.</span>
+        </a>
+
+        <a href="{% url "tripods" %}" class="category-card">
+          <span class="icon">&#128247;</span>
+          <strong>Tripods</strong>
+          <span>Stable tripod stands for content, photos, and recording.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Products</p>
+        <h2>Popular Gadgets</h2>
+      </div>
+
+      <div class="featured-gallery">
+        <article class="featured-card">
+          <img src="{% static 'images/Images/PHONES/Tecno spark 40.jpg' %}" alt="Tecno Spark 40">
+        </article>
+
+        <article class="featured-card">
+          <img src="{% static 'images/Images/PHONES/Redmi note 13.jpg' %}" alt="Redmi Note 13">
+        </article>
+
+        <article class="featured-card">
+          <img src="{% static 'images/Laptops/HP Elitebook 840 G5.jfif' %}" alt="HP Elitebook 840 G5">
+        </article>
+
+        <article class="featured-card">
+          <img src="{% static 'images/SMART WATCHES/ULTRA 9 PRO.jpeg' %}" alt="Ultra 9 Pro Smart Watch">
+        </article>
+
+        <article class="featured-card">
+          <img src="{% static 'images/Power banks/CHUPEZ 30,000.jpg' %}" alt="ChupeZ 30000mAh Power Bank">
+        </article>
+
+        <article class="featured-card">
+          <img src="{% static 'images/Earbuds/spacebuds-neo-otw-323.webp' %}" alt="Oraimo SpaceBuds Neo">
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="section-heading">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Why Customers Shop With Us</h2>
+      </div>
+
+      <div class="why-choose-grid">
+        <div class="why-choose-card">
+          <strong>Trusted online &amp; offline store</strong>
+        </div>
+        <div class="why-choose-card">
+          <strong>Affordable prices</strong>
+        </div>
+        <div class="why-choose-card">
+          <strong>Quality gadgets</strong>
+        </div>
+        <div class="why-choose-card">
+          <strong>Fast response</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="section-heading">
+        <p class="eyebrow">About Us</p>
+        <h2>About Naxy Tech Gadgets</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          Naxy Tech Gadgets is a trusted online and offline store dedicated to providing quality smartphones and accessories at affordable prices.
+          We specialize in clean UK-used and brand-new devices, including smart watches, earbuds, chargers, and other essential phone accessories.
+        </p>
+        <p>
+          Our goal is to deliver reliable gadgets and excellent customer service, ensuring every customer gets value for their money.
+          Whether you are upgrading your phone or looking for quality accessories, Naxy Tech Gadgets is your go-to plug.
+        </p>
+        <div class="about-card__meta">
+          <p>Located in Fegge, Onitsha</p>
+          <p>WhatsApp: 07049763653</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="section-heading">
+        <p class="eyebrow">Support</p>
+        <h2>Need Help With an Order?</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          If you have any complaint, delivery issue, or product concern, you can send it directly to Naxy Tech Gadgets through email.
+        </p>
+        <a href="complaint.html" class="btn blue">Submit a Complaint</a>
+        <a href="pricelist.html" class="btn green">View Price List</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="bulk-order-banner">
+    <div class="bulk-order-banner__track">
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20am%20looking%20for%20gadgets%20and%20accessories" class="bulk-order-banner__text">
+        Looking for any gadgets and accessories? Kindly DM us on WhatsApp.
+      </a>
+      <a href="https://wa.me/2347049763653?text=Hello%20I%20am%20looking%20for%20gadgets%20and%20accessories" class="bulk-order-banner__text">
+        Looking for any gadgets and accessories? Kindly DM us on WhatsApp.
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Naxy Tech Gadgets. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/2347049763653?text=Hello%20I%20want%20to%20make%20an%20enquiry" class="whatsapp-float" aria-label="Chat with Naxy Tech Gadgets on WhatsApp">
+    &#128172;
+  </a>
+
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/nav.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+</body>
+</html>

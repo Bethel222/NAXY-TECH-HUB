@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Naxy Tech Gadgets</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="cart-page">
+  <div class="site-loader" data-site-loader>
+    <div class="site-loader__card">
+      <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="site-loader__logo">
+      <p class="site-loader__brand">Naxy Tech Gadgets</p>
+      <div class="site-loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <a href="{% url 'index' %}" class="back-link">Back to home</a>
+    <p class="eyebrow">Shopping cart</p>
+    <h1>Your Cart</h1>
+    <p class="page-header__text">Review your selected gadgets, add delivery details, then continue with WhatsApp confirmation or online payment.</p>
+  </header>
+
+  <main class="cart-shell" data-cart-root>
+    <section class="delivery-banner">
+      <div class="delivery-notice">
+        Delivery fee is N2,000 within Onitsha and N3,000 for other locations.
+      </div>
+    </section>
+
+    <section>
+      <div class="cart-list" data-cart-list></div>
+      <p class="cart-empty" data-cart-empty hidden>Your cart is empty. Go back to the store and add a product.</p>
+    </section>
+
+    <section class="delivery-form" aria-label="Delivery details">
+      <div class="section-heading">
+        <p class="eyebrow">Delivery details</p>
+        <h2>Where should we deliver?</h2>
+      </div>
+
+      <div class="delivery-form__grid">
+        <label class="delivery-form__field" for="customer-name">
+          <span>Full name</span>
+          <input id="customer-name" type="text" autocomplete="name" required>
+        </label>
+
+        <label class="delivery-form__field" for="customer-phone">
+          <span>Phone number</span>
+          <input id="customer-phone" type="tel" autocomplete="tel" required>
+        </label>
+
+        <label class="delivery-form__field" for="customer-email">
+          <span>Email address</span>
+          <input id="customer-email" type="email" autocomplete="email" required>
+        </label>
+
+        <label class="delivery-form__field" for="customer-city">
+          <span>City / State</span>
+          <input id="customer-city" type="text" autocomplete="address-level2" required>
+        </label>
+
+        <label class="delivery-form__field delivery-form__field--full" for="customer-address">
+          <span>Delivery address</span>
+          <textarea id="customer-address" autocomplete="street-address" required></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="cart-summary" aria-label="Order summary">
+      <div class="cart-summary__row">
+        <span>Items total</span>
+        <strong data-cart-subtotal>N0</strong>
+      </div>
+      <div class="cart-summary__row">
+        <span>Delivery fee</span>
+        <strong data-cart-delivery>N0</strong>
+      </div>
+      <div class="cart-summary__row">
+        <span>Grand total</span>
+        <strong data-cart-total>N0</strong>
+      </div>
+      <p class="cart-summary__note">Fill in your delivery details to unlock checkout.</p>
+      <a class="btn green checkout-disabled" href="#" data-cart-checkout>Confirm Order on WhatsApp</a>
+      <button class="btn blue paystack-button checkout-disabled" type="button" data-paystack-button disabled>
+        Pay Online with Paystack
+      </button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Naxy Tech Gadgets. All rights reserved.</p>
+  </footer>
+
+  <script src="https://js.paystack.co/v2/inline.js"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/loader.js' %}"></script>
+</body>
+</html>

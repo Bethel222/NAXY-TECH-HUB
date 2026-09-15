@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Naxy Tech Gadgets</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+    .login-message.error {
+        color: #dc3545;
+        background: #fdeaea;
+        border: 1px solid #f5c2c7;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .login-message.success {
+        color: #198754;
+        background: #eafaf1;
+        border: 1px solid #badbcc;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .login-message.warning {
+        color: #856404;
+        background: #fff3cd;
+        border: 1px solid #ffecb5;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .login-message.info {
+        color: #0c5460;
+        background: #d1ecf1;
+        border: 1px solid #bee5eb;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+
+<body class="login-page">
+    <header class="main-header">
+        <nav class="navbar container">
+
+        <!-- Brand Logo -->
+        <a href="/" class="nav-brand">
+            <img src="{% static 'images/NAXY LOGO.png' %}" alt="Naxy Tech Gadgets logo" class="nav-logo">
+            <span class="nav-title">Naxy <span>Tech</span> Gadgets</span>
+        </a>
+
+        <!-- Navigation -->
+        {% comment %} <ul class="nav-menu" id="navMenu">
+
+            <li class="nav-item">
+            <a href="/" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+                Categories <span class="arrow-down">&#9662;</span>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="{% url 'phones' %}" class="dropdown-item">📱 Smart Phones</a></li>
+                <li><a href="{% url 'laptops' %}" class="dropdown-item">💻 Laptops</a></li>
+                <li><a href="{% url 'smartwatch' %}" class="dropdown-item">⌚ Smart Wearables</a></li>
+                <li><a href="{% url 'powerbanks' %}" class="dropdown-item">🔋 Power Banks</a></li>
+                <li><a href="{% url 'earpod' %}" class="dropdown-item">🎧 Earpods & Speakers</a></li>
+                <li><a href="{% url 'tripods' %}" class="dropdown-item">📷 Tripods & Gear</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item">
+            <a href="{% url 'pricelist' %}" class="nav-link">Price List</a>
+            </li>
+
+            <li class="nav-item">
+            <a href="{% url 'complaint' %}" class="nav-link">Support</a>
+            </li>
+
+        </ul> {% endcomment %}
+
+        <!-- Authentication -->
+        <div class="nav-auth">
+
+            <a href="{% url 'admin_dashboard' %}" class="btn-auth btn-dashboard" color="#ffff">
+                Admin Dashboard
+            </a>
+
+
+
+        </div>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        </nav>
+  </header>
+
+<main class="login-shell">
+
+    <section class="login-card">
+
+        <a href="{% url 'index' %}" class="back-link">
+            ← Back to Home
+        </a>
+
+        <div class="login-card__brand">
+
+            <img src="{% static 'images/NAXY LOGO.png' %}"
+                 class="login-card__logo"
+                 alt="Naxy Logo">
+
+            <div>
+
+                <p class="eyebrow">
+                    Customer Login
+                </p>
+
+                <h1 id="login-title">
+                    Welcome Back
+                </h1>
+
+                <p>
+                    Login to continue shopping.
+                </p>
+
+            </div>
+
+        </div>
+
+        {% if messages %}
+
+            {% for message in messages %}
+
+                <div class="login-message {{ message.tags }}">
+                    {{ message }}
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+
+        <form method="POST" class="login-form">
+
+            {% csrf_token %}
+
+            <label class="login-form__field">
+
+                <span>Email Address</span>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </label>
+
+            <label class="login-form__field">
+
+                <span>Password</span>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required>
+
+            </label>
+
+            <div class="login-form__row">
+
+                <label class="login-form__check">
+
+                    <input type="checkbox">
+
+                    <span>Remember me</span>
+
+                </label>
+
+                <a href="{% url 'forgot_password' %}">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button class="btn blue" type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="login-card__note">
+            Don't have an account?
+        </p>
+
+        <a href="{% url 'signup' %}" class="btn green">
+            Create Account
+        </a>
+
+    </section>
+
+</main>
+
+<script src="{% static 'js/nav.js' %}"></script>
+<script src="{% static 'js/loader.js' %}"></script>
+
+</body>
+</html>
+
